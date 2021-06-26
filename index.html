@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slack fitness</title>
+  </head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+      background: url("images/main.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .left {
+      border: 2px solid blueviolet;
+      color: white;
+      display: inline-block;
+      position: absolute;
+      left: 38px;
+      top: 20px;
+    }
+
+    .mid {
+      display: block;
+      width: 40%;
+      margin: 30px auto;
+      border: 2px solid yellow;
+      position: sticky;
+    }
+
+    .right {
+      display: inline-block;
+      position: absolute;
+      right: 34px;
+      top: 20px;
+      border: 0px solid white;
+      color: white;
+      border-radius: 10px;
+    }
+
+    .navbar {
+      display: inline-block;
+    }
+
+    .navbar li {
+      display: inline-block;
+      font-size: 15px;
+      padding: 0px 25px;
+      font-weight: bold;
+    }
+
+    .navbar li a {
+      color: whitesmoke;
+      text-decoration: none;
+      font-family: sans-serif;
+    }
+
+    .navbar li a:hover {
+      color: rgb(190, 184, 146);
+    }
+
+    .left img {
+      width: 100px;
+      filter: invert(100%);
+    }
+
+    .left div {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .btn {
+      margin: -2px 15px;
+      color: white;
+      font-size: 18px;
+      background-color: rgb(245, 98, 98);
+      padding: 15px 20px;
+      border: 2px solid yellow;
+      border-radius: 200px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      color: #3c2b52;
+    }
+
+    .container {
+      border: 0px solid white;
+      margin: 103px 33px;
+      padding: 85px;
+      width: 33%;
+      border-radius: 25px;
+    }
+
+    .form-group input {
+      text-align: center;
+      display: block;
+      width: 200px;
+      padding: 6px 2px;
+      border: 5px solid salmon;
+      margin: 12px auto;
+      font-family: sans-serif;
+      color: rgb(172, 170, 170);
+    }
+
+    label {
+      text-align: center;
+      display: block;
+      color: white;
+      text-shadow: black;
+      font-family: sans-serif;
+    }
+
+    h1 {
+      font-family: sans-serif;
+      text-align: center;
+      color: rgb(172, 170, 170);
+    }
+
+    .btn2 {
+      color: rgb(172, 170, 170);
+      font-family: sans-serif;
+      margin: 32px auto;
+      padding: 6px 27px;
+      display: block;
+      color: white;
+      background-color: rgb(245, 98, 98);
+      border: 0px solid none;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+
+    .btn2:hover {
+      background-color: rgb(247, 115, 115);
+      color: #3c2b52;
+    }
+
+    .header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background-color: coral;
+    }
+  </style>
+  <body>
+    <header class="header">
+      <div class="left">
+        <img src="images/logo.jpg" alt="" />
+        <div>Slack Fitness</div>
+      </div>
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">WHY JOIN</a></li>
+          <li><a href="#">TRAINING</a></li>
+          <li><a href="#">CONTACT US</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <button class="btn">TRY US FOR FREE</button>
+      </div>
+    </header>
+    <div class="container">
+      <h1>Hello!! Join us</h1>
+      <form action="">
+        <label for="name">Name</label>
+        <div class="form-group">
+          <input type="text" id="name" placeholder="Enter your name" />
+        </div>
+        <label for="age">Age</label>
+        <div class="form-group">
+          <input type="text" id="age" placeholder="Enter your age" />
+        </div>
+        <label for="email">Email</label>
+        <div class="form-group">
+          <input type="text" id="email" placeholder="Enter your email" />
+        </div>
+        <label for="number">Number</label>
+        <div class="form-group">
+          <input type="text" id="number" placeholder="Enter your number" />
+        </div>
+        <button class="btn2">SUBMIT</button>
+      </form>
+    </div>
+  </body>
+</html>
